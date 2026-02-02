@@ -1,0 +1,77 @@
+<div class="departments">
+                <button class="dept-btn" data-dept="atendimento">
+                    <span class="dept-icon">💬</span>
+                    <span class="dept-name">Atendimento</span>
+                </button>
+                <button class="dept-btn" data-dept="procuracoes">
+                    <span class="dept-icon">📝</span>
+                    <span class="dept-name">Procurações</span>
+                </button>
+                <button class="dept-btn" data-dept="juridico">
+                    <span class="dept-icon">⚖️</span>
+                    <span class="dept-name">Jurídico</span>
+                </button>
+                <button class="dept-btn" data-dept="administrativo">
+                    <span class="dept-icon">📋</span>
+                    <span class="dept-name">Administrativo</span>
+                </button>
+                <button class="dept-btn" data-dept="notas">
+                    <span class="dept-icon">🧾</span>
+                    <span class="dept-name">Notas Fiscais</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tela de Escolha do Canal -->
+    <div id="screen-channel" class="screen">
+        <div class="card">
+            <button class="back-btn" onclick="goBack('screen-welcome')">← Voltar</button>
+            <div class="logo">
+                <h2>Como prefere conversar?</h2>
+                <p id="selected-dept-text">Departamento selecionado</p>
+            </div>
+            
+            <div class="channel-options">
+                <button class="channel-btn" id="btn-chat">
+                    <span class="channel-icon">💻</span>
+                    <span class="channel-name">Chat no Site</span>
+                    <span class="channel-desc">Converse aqui mesmo</span>
+                </button>
+                <button class="channel-btn whatsapp" id="btn-whatsapp">
+                    <span class="channel-icon">📱</span>
+                    <span class="channel-name">WhatsApp</span>
+                    <span class="channel-desc">Abrir no WhatsApp</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tela de Chat -->
+    <div id="screen-chat" class="screen">
+        <div class="chat-container">
+            <div class="chat-header">
+                <button class="back-btn" onclick="goBack('screen-channel')">←</button>
+                <div class="chat-header-info">
+                    <span class="chat-header-title" id="chat-dept-title">Atendimento</span>
+                    <span class="chat-header-status">Online</span>
+                </div>
+            </div>
+            
+            <div class="chat-messages" id="chat-messages">
+                <!-- Mensagens serão inseridas aqui -->
+            </div>
+            
+            <div class="chat-input-container" id="chat-input-container">
+                <input type="text" id="chat-input" placeholder="Digite sua mensagem..." autocomplete="off">
+                <button id="chat-send">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.01 21L23 12L2.01 3L2 10L17 12L2 14L2.01 21Z" fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
